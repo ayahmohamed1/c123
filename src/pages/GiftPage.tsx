@@ -7,7 +7,7 @@ import NotFound from './NotFound'
 export default function GiftPage() {
   const { id } = useParams<{ id: string }>()
   const giftKey = id ? id.toLowerCase() : ''
-  const data = giftData[giftKey]
+  const data = giftData[giftKey] || giftData['abdelrahman'] || giftData['aya']
 
   useEffect(() => {
     if (data) {

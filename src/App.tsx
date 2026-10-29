@@ -7,7 +7,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<Navigate to="/gift/abdelrahman" replace />} />
       <Route path="/gift/:id" element={<GiftPage />} />
-      <Route path="*" element={<NotFound />} />
+      <Route path="*" element={<Navigate to="/gift/abdelrahman" replace />} />
     </Routes>
   )
 }
